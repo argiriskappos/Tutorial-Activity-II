@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+/* Base styling */
+body {
+    background-color: black;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Wrapper */
+#wrapper {
+    width: 960px;
+    min-height: 800px;
+    margin: 0 auto;
+    background-color: LightSlateGrey;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Banner */
+#banner {
+    height: 120px;
+    background-color: SlateGrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#banner h1 {
+    color: white;
+    font-size: 32px;
+    margin: 0;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Navigation (Sidebar) */
+#left-column {
+    float: left;
+    width: 300px;
+    min-height: 600px;
+    background-color: silver;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#left-column h3 {
+    color: black;
+    margin-top: 0;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
+#left-column ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#left-column li {
+    margin: 15px 0;
+}
+
+#left-column a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+#left-column a:hover {
+    color: white;
+    background-color: SlateGrey;
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+
+/* Main Content */
+#right-column {
+    float: right;
+    width: 660px;
+    min-height: 600px;
+    background-color: LightGray;
+    padding: 20px;
+    box-sizing: border-box;
+    color: black;
+}
+
+#right-column h2 {
+    margin-top: 0;
+}
+
+/* Grid of Security Topics */
+.content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.box {
+    height: 150px;
+    width: 180px;
+    background-color: tan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0.8;
+    transition: all 0.3s;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+
+.box:hover {
+    background-color: white;
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Footer */
+#footer {
+    clear: both;
+    height: 80px;
+    background-color: SlateGrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer p {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+}
